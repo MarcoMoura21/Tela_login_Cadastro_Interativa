@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/8d52921fdb.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -14,25 +15,40 @@
         <div class="content first-content"><!-- first content -->
             <div class="first-column"><!-- second column -->
                 <h2 class="title title-primary">Seja bem-vindo!</h2>
-                <p class="description">Para continuar conectado conosco</p>
-                <p class="description">Por favor logue com suas informações pessoais</p>
+                <p class="description description-primary">Para continuar conectado conosco</p>
+                <p class="description description-primary">Por favor logue com suas informações pessoais</p>
                 <button class="btn btn-primary">Entrar</button>
             </div>
             <div class="second-column"><!-- second column -->
-                <h2 class="title">Criar conta</h2>
+                <h2 class="title title-second">Criar conta</h2>
                 <div class="social-media"><!-- social media -->
                     <ul class="list-social-media">
-                        <li><a href="#"></a>Facebook</li>
-                        <li><a href="#"></a>Instagram</li>
-                        <li><a href="#"></a>Linkedin</li>
+                        <li class="item-social-media"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="item-social-media"><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
+                        <li class="item-social-media"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
                     </ul>
                 </div><!-- social media -->
-                <p class="description">Ou use seu e-mail para cadastro:</p>
+                <p class="description description-second">Ou use seu e-mail para cadastro:</p>
+
                 <form class="form">
-                    <input type="text" placeholder="Nome">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Senha">   
-                    <button class="btn">Inscrever-se</button>                 
+
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-user icon-modify"></i>
+                        <input type="text" placeholder="Nome">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha"> 
+                    </label>                      
+                    
+                    <button class="btn btn-second">Criar conta</button>  
+
                 </form>
             </div><!-- second column -->
         </div><!-- first content -->
