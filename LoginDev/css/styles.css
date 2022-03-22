@@ -34,6 +34,11 @@ body {
     background-color: #58af9b;
     width: 40%;
     height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+    left: 60%;
 }
 
 .title {    
@@ -52,12 +57,12 @@ body {
 
 .first-content {
     display: flex;
+    display: none;
 }
 
 .description {
     font-size: 14px;    
     font-weight: 300;
-    color: #fff;
     line-height: 30px;
 }
 
@@ -73,14 +78,14 @@ body {
     border-radius: 15px;
     text-transform: uppercase;
     color: #fff;
-    font-size: 12px;
+    font-size: 10px; /*10*/
     padding: 10px 50px;
     cursor: pointer;
     font-weight: bold;
-    width: 190px;
+    width: 150px; /*190*/
     align-self: center;
     border: none;
-    
+    margin-top: 1rem;
 }
 
 .btn-primary {
@@ -117,6 +122,20 @@ body {
     align-items: center;
 }
 
+.social-media {
+    margin: 1rem 0;
+}
+
+.link-social-media:not(:first-child) {
+    margin-left: 10px;
+}
+
+.link-social-media:hover .item-social-media {
+    background-color: #58af9b;  
+    color: #fff;  
+    border-color: #58af9b;
+}
+
 .list-social-media {
     display: flex;
     list-style-type: none;
@@ -128,22 +147,14 @@ body {
     width: 35px;
     height: 35px;
     line-height: 35px;
-    text-align: center;    
-}
-
-.item-social-media:not(:first-child) {
-    margin-left: 10px;
-}
-
-
-.item-social-media a {
-    color: #95a5a6;
+    text-align: center; 
+    color: #95a5a6;  
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 55%;    
 }
 
 .form input {
@@ -167,6 +178,24 @@ body {
 
 .second-content {
     position: absolute;
-    display: none;
+    display: flex;
 }
 
+.second-content .first-column {
+    order: 2;
+}
+
+.second-content .second-column {
+    order: 1;
+}
+
+.password {
+    color: #34495e;
+    font-size: 14px;
+    margin: 1px 0;
+    text-align: center;
+}
+
+.password::first-letter {
+    text-transform: capitalize;
+}
